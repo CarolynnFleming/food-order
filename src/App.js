@@ -16,6 +16,7 @@ function App() {
       <h1>Order for {orderName}</h1>
       <DishImages dishId={dishId} beverageId={beverageId} sideDishId={sideDishId}/>
       <NameInput theOrderName={theOrderName}/>
+      <InstructionList basicInstructions={basicInstructions}/>
     </div>
   );
 }

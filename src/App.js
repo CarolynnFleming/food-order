@@ -9,6 +9,7 @@ function App() {
   const [beverageId, theBeverageId] = useState(1);
   const [sideDishId, theSideDishId] = useState(1);
   const [orderName, theOrderName] = useState('loyal customer');
+  const [basicInstructions,theBasicInstructions] = useState(['Make it GREAT!!!', 'Make it  YUMMY!!!']);
   return (
     <div className="App">
       <h1>Order for {orderName}</h1>

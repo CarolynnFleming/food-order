@@ -2,7 +2,8 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [dish, theDishId] = useState(1);
+  const [dishId, theDishId] = useState(1);
+  const [beverageId, theBeverageId]
   return (
     <div className="App">
       

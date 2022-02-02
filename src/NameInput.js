@@ -5,7 +5,8 @@ export default function NameInput({ theOrderName }) {
     theOrderName(e.target.value);
   }
   return <div className='name-input'>
-      Order Name:
-      <input onChange={handleChange}/>
+     
+🍽️🥂Order Name:
+    <input onChange={handleChange}/>
   </div>;
 }

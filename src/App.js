@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import DishImages from './DishImages.js';
 import NameInput from './NameInput.js';
+import InstructionList from './InstructionList.js';
 
 
 function App() {

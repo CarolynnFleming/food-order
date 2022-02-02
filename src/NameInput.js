@@ -4,5 +4,5 @@ export default function NameInput({ theOrderName }) {
   function handleChange(e) {
     theOrderName(e.target.value);
   }
-  return <div></div>;
+  return <div className='name-input'></div>;
 }

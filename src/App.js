@@ -11,6 +11,7 @@ function App() {
   const [orderName, theOrderName] = useState('loyal customer');
   return (
     <div className="App">
+      <h1>Order for {orderName}</h1>
       <DishImages dishId={dishId} beverageId={beverageId} sideDishId={sideDishId}/>
     </div>
   );

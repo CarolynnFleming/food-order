@@ -9,7 +9,7 @@ function App() {
   const [sideDishId, theSideDishId] = useState(1);
   return (
     <div className="App">
-      
+      <DishImages dishId={dishId} beverageId={beverageId} sideDishId={sideDishId}/>
     </div>
   );
 }

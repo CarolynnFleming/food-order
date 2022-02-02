@@ -6,5 +6,6 @@ export default function NameInput({ theOrderName }) {
   }
   return <div className='name-input'>
       Order Name:
+      <input onChange={handleChange}/>
   </div>;
 }

@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import DishImages from './DishImages.js';
 
 
 function App() {

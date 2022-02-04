@@ -5,11 +5,15 @@ export default function InstructionForm({ setBasicInstuctions, basicInstructions
   const [instructionForm, setInstructiomForm] = useState('');
 
   function handleSubmit(e){
-      e.preventDefault();
+    e.preventDefault();
 
-      setBasicInstuctions([...basicInstructions, instructionForm]);
+    setBasicInstuctions([...basicInstructions, instructionForm]);
 
-      setInstructiomForm('');
+    setInstructiomForm('');
+  }
+
+  function handleInstructionChange(e) {
+      setInstructiomForm(e.target.value);
   }
   return <div></div>;
 }

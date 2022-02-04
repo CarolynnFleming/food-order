@@ -13,7 +13,12 @@ export default function InstructionForm({ setBasicInstuctions, basicInstructions
   }
 
   function handleInstructionChange(e) {
-      setInstructiomForm(e.target.value);
+    setInstructiomForm(e.target.value);
   }
-  return <div></div>;
+  return <form onSubmit={handleSubmit}>
+      <label>
+          <input required value={instructionForm} onChange={handleInstructionChange}/>
+      </label>
+      <button>Add Instruction</button>
+  </form>;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function NameInput({ theOrderName }) {
+export default function NameInput({ setOrderName }) {
   function handleChange(e) {
-    theOrderName(e.target.value);
+    setOrderName(e.target.value);
   }
   return <div className='name-input'>
      

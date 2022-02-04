@@ -19,6 +19,7 @@ export default function InstructionForm({ setBasicInstuctions, basicInstructions
     <label>
       <input required value={instructionForm} onChange={handleInstructionChange}/>
     </label>
-    <button>Add Instruction</button>
+    <div>
+      <button className='button'>Add Instruction</button></div>
   </form>;
 }

@@ -17,16 +17,21 @@ function App() {
   const [basicInstructions, setBasicInstructions] = useState(['Make it GREAT!!!', 'Make it  YUMMY!!!']);
   return (
     <div className="App">
-      <h1>Order for {orderName}</h1>
-      <DishImages dishId={dishId} beverageId={beverageId} sideDishId={sideDishId}/>
-      <NameInput setOrderName={setOrderName}/>
-      <InstructionList basicInstructions={basicInstructions}/>
-      <section>
+
+      <div className='main'>
+        <h1>Order for {orderName}</h1>
+        <DishImages dishId={dishId} beverageId={beverageId} sideDishId={sideDishId}/>
+        <NameInput setOrderName={setOrderName}/>
+        <InstructionList basicInstructions={basicInstructions}/>
+      </div>
+
+
+      <div className='form'>
         <DishDropDown setDishId={setDishId}/>
         <BeverageDropDown setBeverageId={setBeverageId}/>
         <SideDishDropDown setSideDishId={setSideDishId}/>
-      </section>
-      <InstructionForm basicInstructions={basicInstructions} setBasicInstuctions={setBasicInstructions}/>
+        <InstructionForm basicInstructions={basicInstructions} setBasicInstuctions={setBasicInstructions}/>
+      </div>
     </div>
   );
 }

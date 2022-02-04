@@ -6,6 +6,7 @@ import InstructionList from './InstructionList.js';
 import DishDropDown from './DishDropDown.js';
 import BeverageDropDown from './BeverageDropDown.js';
 import SideDishDropDown from './SideDishDropDown.js';
+import InstructionForm from './InstructionForm';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <BeverageDropDown setBeverageId={setBeverageId}/>
         <SideDishDropDown setSideDishId={setSideDishId}/>
       </section>
+      <InstructionForm basicInstructions={basicInstructions} setBasicInstuctions={setBasicInstructions}/>
     </div>
   );
 }

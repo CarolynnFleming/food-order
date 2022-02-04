@@ -16,9 +16,9 @@ export default function InstructionForm({ setBasicInstuctions, basicInstructions
     setInstructiomForm(e.target.value);
   }
   return <form onSubmit={handleSubmit}>
-      <label>
-          <input required value={instructionForm} onChange={handleInstructionChange}/>
-      </label>
-      <button>Add Instruction</button>
+    <label>
+      <input required value={instructionForm} onChange={handleInstructionChange}/>
+    </label>
+    <button>Add Instruction</button>
   </form>;
 }

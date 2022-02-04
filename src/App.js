@@ -5,6 +5,7 @@ import NameInput from './NameInput.js';
 import InstructionList from './InstructionList.js';
 import DishDropDown from './DishDropDown.js';
 import BeverageDropDown from './BeverageDropDown.js';
+import SideDishDropDown from './SideDishDropDown.js';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <section>
         <DishDropDown setDishId={setDishId}/>
         <BeverageDropDown setBeverageId={setBeverageId}/>
+        <SideDishDropDown setSideDishId={setSideDishId}/>
       </section>
     </div>
   );
